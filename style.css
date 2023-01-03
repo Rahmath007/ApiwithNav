@@ -49,6 +49,21 @@ nav ul li a:hover{
     display: block;
 
 }
+
+footer{
+    margin-top: 400px;
+    bottom: 0;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+li{
+    display:inline-block;
+    padding:10px;
+}
+
 /*
 #button, #button1, #button2, #button3, #button4 {
     margin: 0 auto;
