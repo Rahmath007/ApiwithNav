@@ -1,11 +1,11 @@
-function dofilter()
+function search()
 {
         var inputval = document.getElementById('filter_input').value;
         var count = 0;
 
         if(inputval != "")
         {
-            var ul = document.getElementById("puns");
+            var ul = document.getElementById("jokes");
             var items = ul.getElementsByTagName("li");
             for (var i = 0; i < items.length; ++i)
             {
@@ -40,8 +40,8 @@ function dofilter()
         }
 }
 var input = document.getElementById("filter_input");
-input.addEventListener("keyup", function(event){	dofilter(); });
-document.getElementById('filter_btn').onclick = function(){	dofilter();}
+input.addEventListener("keyup", function(event){	search(); });
+document.getElementById('filter_btn').onclick = function(){	search();}
 
 
 
@@ -63,7 +63,7 @@ var $q = function(q, res){
         }
         return res;
     }
-    ,addEventListener = function(evt, fn){
+    , addEventListener = function(evt, fn){
         window.addEventListener
         ? this.addEventListener(evt, fn, false)
         : (window.attachEvent)
