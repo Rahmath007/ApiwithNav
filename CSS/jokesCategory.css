@@ -26,6 +26,13 @@ nav ul li a:hover{
     color: #ea1538;
     transition: .3s;
 }
+#logo {
+    width: 320px; height: 320px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+
+}
 
 #new,#new1,#new2,#new3,#new5{
     flex: auto;
