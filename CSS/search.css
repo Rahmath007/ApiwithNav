@@ -1,3 +1,48 @@
+header{
+    background: linear-gradient(315deg, #701919, #a5d6ca);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+}
+
+p {
+    margin: 5px 0px 0px;
+    font-size: 17px;
+    letter-spacing: 0.25px;
+}
+
+h1 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    line-height: 1em;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+    
+    
+    /*
     html {
     background: #d4d4d4;
     color: #313131;

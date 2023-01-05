@@ -5,44 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
 
     <header>
-        <a href="#button-container" id="skip">Skip to content</a>
+        <a href="#logo" id="skip">Skip to content</a>
         <nav id="nav">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="JokesCategory.html">Jokes Category</a></li>
                 <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="search.html">Search Jokes</a></li>
+
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <img id="logo" src="img/images.jpeg"/> 
+            <img id="logo" src="/img/images.jpeg" alt="Chuck norris logo"/> 
+            <h2>Click on the Image to get Random Jokes</h2>
             <div id="results"></div>
             <div id="data"></div>
-            <div class="button-container">
-                <button class="button" id="button" >Random Jokes</button>
-                <button class="button" id="button1" >Dev Jokes</button>
-                <button class="button" id="button2">Animal Jokes</button>
-                <button class="button" id="button3">Science Jokes</button>
-                <button class="button" id="button4">Explicit Jokes</button>
-            </div>
-            <!-- content goes here-->
         </section>
     </main>
 
     <footer>
-        <p>Copyright 2022 My Website</p>
+        <h2>Copyright 2022 My Website</h2>
         <ul>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Contact Us</a></li>
         </ul>
     </footer>
     <script src="./script.js"></script>

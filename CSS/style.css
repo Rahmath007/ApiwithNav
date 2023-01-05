@@ -1,10 +1,13 @@
+header{
+    background: linear-gradient(315deg, #701919, #a5d6ca);
+}
+
 #nav {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
-    background: linear-gradient(315deg, #701919, #a5d6ca);
 }
 
 nav ul li {
@@ -14,7 +17,6 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 20px;
     color:black;
     text-decoration: none;
     font-weight: bold;
@@ -25,37 +27,30 @@ nav ul li a:hover{
     transition: .3s;
 }
 
-section {
-    align-items: center;
+
+#logo {
+    width: 320px; height: 320px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+
 }
 
-
-#contact-page {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-#contact-page {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-} 
-
-@media (max-width: 60px) {
-    #contact-page {
-    grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-#contact-form {
-    border: 1px solid #dddddd;
-    padding: 20px;
-    background-color: #f9f9f9;
+p{
     text-align: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-
+#data{
+    width: 600px;
+    border: 1px dashed black;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+}
 
 footer{
     margin-top: 290px;
@@ -63,7 +58,7 @@ footer{
     display: grid;
     height: 100%;
     width: 100%;
-    place-items: center;
+    place-items: center; 
     background: linear-gradient(315deg, #ffffff, #d7e1ec);
 }
 
