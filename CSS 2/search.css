@@ -1,0 +1,32 @@
+
+
+/* Set the form and input elements to have a white background and a dark gray border 
+#search-form,
+#search-input {
+    background-color: #fff;
+    border: 2px solid #333;
+}
+
+/* Set the input element to have a height of 40px and 20px padding 
+#search-input {
+    height: 40px;
+    padding: 0 20px;
+}
+
+
+/* Set the container for the search results to have a white background and a dark gray border *
+#search-results {
+    background-color: #fff;
+    border: 2px solid #333;
+}
+
+#jokes{
+    width: 600px;
+    border: 1px dashed black;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+*/

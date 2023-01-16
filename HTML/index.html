@@ -1,44 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokes Factory</title>
+    <!-- Display title logo -->
+    <link rel="icon" type="image/jpg" href="/img/images.jpeg" />
 
+    <!-- Link to a stylesheet file -->
+    <link rel="stylesheet" href="/CSS/nav.css" />
+    <link rel="stylesheet" href="/CSS/footer.css" />
+    
+
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <!-- The webpage's header -->
     <header>
-        <a href="#logo" id="skip">Skip to content</a>
-        <nav id="nav">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="JokesCategory.html">Jokes Category</a></li>
-                <li><a href="contactUs.html">Contact Us</a></li>
-                <li><a href="search.html">Search Jokes</a></li>
-
-            </ul>
-        </nav>
+      <!-- A link to skip to the main content -->
+      <a href="#logo" id="skip">Skip to content</a>
+      <!-- The navigation menu -->
+      <nav id="nav">
+        <ul>
+          <li><a href="JokesCategory.html">Jokes Category</a></li>
+          <li><a href="search.html">Search Jokes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <!-- The main content of the webpage -->
     <main>
-        <section>
-            <img id="logo" src="/img/images.jpeg" alt="Chuck norris logo"/> 
-            <h2>Click on the Image to get Random Jokes</h2>
-            <div id="results"></div>
-            <div id="data"></div>
-        </section>
+      <section>
+        <!-- The Chuck Norris logo image -->
+        <img id="logo" src="/img/images.jpeg" alt="Chuck norris logo" />
+        <!-- A heading -->
+        <h2>Click on the Image to get Random Jokes</h2>
+        <!-- A container for the search results -->
+        <div id="results"></div>
+        <!-- A container where the random Chuck Norris fact will be displayed -->
+        <div id="data"></div>
+      </section>
     </main>
 
+    <!-- The webpage's footer -->
     <footer>
-        <h2>Copyright 2022 My Website</h2>
-        <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Use</a></li>
-        </ul>
+
+      <!-- Title for the section -->
+      <h1 id="test">nothing</h1>
+        <!-- Sub-title for the section -->
+      <h2>Follow Us</h2>
+        <!-- Instruction for the user -->
+      <p>Find us on social media:</p>
+
+      <!-- Wrapper for the social media icons -->
+      <div class="wrapper">
+        <div class="icon facebook">
+          <a href="https://www.facebook.com/example"></a>
+          <div class="tooltip">Facebook</div>
+          <span><i class="fab fa-facebook"></i></span>
+        </div>
+
+        <div class="wrapper">
+          <div class="icon twitter">
+            <div class="tooltip">Twitter</div>
+            <span><i class="fab fa-twitter"></i></span>
+          </div>
+
+          <div class="wrapper">
+            <div class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </div>
+
+            <div class="wrapper">
+              <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="./script.js"></script>
-</body>
+    <!-- Load a JavaScript file -->
+    <script src="/JS/script.js"></script>
+  </body>
 </html>

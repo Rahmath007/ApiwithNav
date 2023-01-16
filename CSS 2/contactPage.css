@@ -1,4 +1,4 @@
-#nav {
+/* #nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,9 +23,9 @@ nav ul li a {
 nav ul li a:hover{
     color: #ea1538;
     transition: .3s;
-}
+} */
 
-section {
+/* section {
     align-items: center;
 }
 
@@ -53,17 +53,17 @@ section {
     padding: 20px;
     background-color: #f9f9f9;
     text-align: center;
-}
+} */
 
 
 
 
-
+/* 
 footer{
+    position: fixed;
     margin-top: 290px;
     bottom: 0;
     display: grid;
-    height: 100%;
     width: 100%;
     place-items: center;
     background: linear-gradient(315deg, #ffffff, #d7e1ec);
@@ -164,4 +164,4 @@ footer{
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip:before{
     background: #e1306c;
-}
+} */

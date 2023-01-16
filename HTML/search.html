@@ -1,106 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>List of Funny Animal Jokes</title>
-		
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/nav.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17063993-22"></script>
 
+  </head>
+  <body>
 
-
-<link rel="preconnect" href="//www.gstatic.com" crossorigin>
-<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
-<link rel="preconnect" href="//apis.google.com" crossorigin>
-<link rel="preconnect" href="//www.google-analytics.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/CSS/search.css">
-
-</head>
-
-<body>
-	
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="JokesCategory.html">Jokes Category</a></li>
-                <li><a href="contactUs.html">Contact Us</a></li>
-            </ul>
-        </nav>
+      <!-- A link to skip to the main content -->
+      <a href="#search-input" id="skip">Skip to content</a>
+      <!-- The navigation menu -->
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home page</a></li>
+          <li><a href="JokesCategory.html">Jokes Category</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
         <section>
-        <div class="content">
-            <h1>
-                Animal jokes
-            </h1>
-            <p>
-                Our list of funny jokes about animals. Perfect for any animal-lover who wants a funny pun to share relating to animals and pets.
-            </p>
-            <p>
-                You can filter our list of animal jokes by typing a name of the specific animal in the box below. This will show only jokes relating to your search term, for example if you want dog jokes type dog below and click filter.
-            </p>
-    
-            <label for="filter_input">Animal Search:</label>
-            <input onchange="search()" type="text" class="forcestyle" name="filter_input" id="filter_input" placeholder="Type an animal name..."/>
-            <input type="button" class="forcestyle" name="filter_btn" value="Filter" id="filter_btn" placeholder="Type an animal name..."/>
-    
-            <div id="result"></div>
-            <ul id="jokes" class="jokes">
-                <li data-tags="cows,moo,calf">How does a farmer count cows? With a cow-culator</li>
-                <li data-tags="cows,moo,calf">Why do cows wear bells? because their horns don't work!</li>
-                <li data-tags="dogs,puppy,woof,paw">I'm having a ruff day. Don't terrier self up about it. There's sure to be a pawsitive outcome!</li>
-                <li data-tags="horse,foul,stable">Why are most horses so slim? Because they are on a stable diet!</li>
-                <li data-tags="crabs,shellfish,sea,ocean">Why didn't the crab share it's toys? It was too shellfish!</li>
-                <li data-tags="zoo,dogs,animals">I went to the zoo today, there was only one animal. It was a shitzu!</li>
-                <li data-tags="dogs,puppy,puppies">A dog gave birth to puppies near the road and was ticketed for littering.</li>
-                <li data-tags="beavers,damn,river">I watched a documentary about beavers last night. It was the best dam show ever!</li>
-                <li data-tags="horses,stable">A man was hospitalized with 6 plastic horses inside him. The doctor described his condition as stable!<br/>
-    
-                <li data-tags="bees,hive">When Noah was loading the ark, where did he put the bees? In the ark-hives!</li>
-                <li data-tags="fish">What do you call a fish with no eyes? A fsh.</li>
-                <li data-tags="dogs,puppy">What do you call a magic dog? A Labracadabrador.</li>
-                <li data-tags="squid,ocean,kraken">These giant squid jokes are kraken me up!</li>
-                <li data-tags="chickens,chick,chicks">Why couldn't the chicken find her eggs? Because she mislaid them.</li>
-                <li data-tags="meow,cats,kittens">What do you call a pile of cats? A meowtain.</li>
-                <li data-tags="cheetahs, cats">Have you ever heard of an honest cheetah?</li>
-                <li data-tags="bunny,rabbits,bunnies">Why did the bunny bang his head on the piano? He was playing by ear!</li>
-                <li data-tags="dragons,fairy">Long fairy tales have a tendency to dragon.</li>
-                <li data-tags="alligators">What do you call an alligator with a vest? Invest-igator.</li>
-                <li data-tags="sheep">By shear coincidence, all these sheep look the same.</li>
-                <li data-tags="pigs,boars">Pig jokes are so boaring.</li>
-                <li data-tags="chicks,chickens">Which day do chickens hate the most? Friday.</li>
-                <li data-tags="cats,kittens,meows">I'm so purrfect that whenever I meet a pretty girl, I whisker away.</li>
-                <li data-tags="fish">The best way to communicate with fish is to drop them a line. <br/>
-    
-                <li data-tags="dogs,puppies,puppy,woof">When I asked my dog how his day was he said it was rough.</li>
-                <li data-tags="cows,calf,moo">What do you call a cow with two legs? Lean beef.</li>
-                <li data-tags="rabbits,bunny,bunnies">Why did the bunny eat the wedding ring? Because he heard it was 24 carrots.</li>
-                <li data-tags="sheep,snakes">What happens when a sheep, a drum and a snake fall from a cliff BA DUM TS.</li>
-                <li data-tags="chickens,chicks">I've got a chicken-proof front lawn. It's impeccable!</li>
-                <li data-tags="rodents,hamsters">What city has the largest rodent population? Hamsterdam</li>
-                <li data-tags="cows,moo,calf">What's a cow eating grass? A lawn mooer.<br/>
-                <li data-tags="cats,kittens,meow">Cuddling a cat usually leaves you feline good.</li>
-                <li data-tags="ducks,quack">The duck was in rehab because he was a quackaddict.</li>
-                <li data-tags="bear,bears,mooses">A bear was killing moose for entertainment but in the end he wasn't amoosed.</li>
-                <li data-tags="insects,insect,fly">I hate insects, they really bug me.</li>
-                <li data-tags="dinosaurs">What do you call a dinosaur with an extensive vocabulary? A Thesaurus.</li>
-                <li data-tags="crabs,shellfish">Why do crabs never give to charity? Because they're shellfish.</li>
-                <li data-tags="birds,toucan">My friend was annoying me with bird jokes but toucan play this game.</li>
-                <li data-tags="dogs,puppies,woof">We call our dog Rolex, since he’s a watchdog.</li>
-                <li data-tags="bears,bees">What would bears be without bees? Ears.</li>
-                <li data-tags="rabbits,bunny,bunnies">What do you call a rabbit with fleas? Bugs bunny</li>
-            </ul>
+        <form id="search-form">
+          <label for="search-input">Search:</label>
+
+          <input type="text" id="search-input" placeholder="Enter your search query"/>
+
+          <button type="submit">Search</button>
+        </form>
+
+        <!-- Container for the search results -->
+
+        <div id="search-results" style="display: none">
+          <!-- List of jokes -->
+
+          <ul id="jokes"></ul>
+        </div>
+        </section>
+      </main>
+
+      <footer>
+        <h1 id="test">nothing</h1>
+        <h2>Follow Us</h2>
+        <p>Find us on social media:</p>
+  
+        <div class="wrapper">
+          <div class="icon facebook">
+            <a href="https://www.facebook.com/example"></a>
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook"></i></span>
+          </div>
+  
+          <div class="wrapper">
+            <div class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
             </div>
-            </section>
-        </main>
-            <script src="/JS/search.js"></script>
-    </body>
-    </html>
-    
+  
+            <div class="wrapper">
+              <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+  
+              <div class="wrapper">
+                <div class="icon instagram">
+                  <div class="tooltip">Instagram</div>
+                  <span><i class="fab fa-instagram"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      </footer>
+      <script src="/JS/search.js"></script>
+  </body>
+</html>

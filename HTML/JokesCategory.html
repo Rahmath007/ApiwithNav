@@ -4,81 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/jokesCategory.css">
+    <title>Jokes Category</title>
+    <link rel="icon" type="image/jpg" href="/img/images.jpeg" />
+    <link rel="stylesheet" href="/CSS/nav.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+        <!-- header section with navigation bar -->
     <header>
-        <a href="#new1" id="skip">Skip to content</a>
-        <nav id="nav">
+        <a href="#dev" id="skip">Skip to content</a>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Jokes</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contactUs.html">Contact Us</a></li>
-                <li><a href="search.html">Search Jokes</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            
+            <!-- image logo that work as button to get random jokes -->
             <img id="logo" src="/img/images.jpeg" alt="Chuck norris logo"/> 
             <div id="results"></div>
 
             
             
         <div class="button-container">
-            
-            <p id="joke"></p>
-            <button class="button" id="new">Random Jokes</button>
-
             <p id="joke1"></p>
-            <button class="button" id="new1">Dev Jokes</button>
+            <button class="button" id="dev" data-target="joke1">Dev Jokes</button>
             
             <p id="joke2"></p>
-            <button class="button" id="new2">Animal Jokes</button>
+            <button class="button" id="animal" data-target="joke2">Animal Jokes</button>
 
             <p id="joke3"></p>
-            <button class="button" id="new3">Science Jokes</button>
+            <button class="button" id="science" data-target="joke3">Science Jokes</button>
 
             <p id="joke4"></p>
-            <button class="button" id="new4">Explicit Jokes</button>
+            <button class="button" id="explicit" data-target="joke4">Explicit Jokes</button>
         </div>
+
+
         </section>
     </main>
 
     <footer>
+      <h1 id="test">nothing</h1>
         <h2>Follow Us</h2>
-            <p>Find us on social media:</p>
-            
+        <p>Find us on social media:</p>
+  
+        <div class="wrapper">
+          <div class="icon facebook">
+            <a href="https://www.facebook.com/example"></a>
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook"></i></span>
+          </div>
+  
+          <div class="wrapper">
+            <div class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </div>
+  
             <div class="wrapper">
-                <div class="icon facebook">
-                    <div class="tooltip">Facebook</div>
-                    <span><i class="fab fa-facebook"></i></span>
+              <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+  
+              <div class="wrapper">
+                <div class="icon instagram">
+                  <div class="tooltip">Instagram</div>
+                  <span><i class="fab fa-instagram"></i></span>
                 </div>
-                
-                <div class="wrapper">
-                    <div class="icon twitter">
-                        <div class="tooltip">Twitter</div>
-                        <span><i class="fab fa-twitter"></i></span>
-                    </div>
-
-            <div class="wrapper">
-                <div class="icon github">
-                    <div class="tooltip">Github</div>
-                    <span><i class="fab fa-github"></i></span>
-                </div>
-            
-
-                <div class="wrapper">
-                    <div class="icon instagram">
-                        <div class="tooltip">Instagram</div>
-                        <span><i class="fab fa-instagram"></i></span>
-                    </div>
-    </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     <script src="/JS/jokesCategory.js"></script>
 </body>
 </html>
+
+

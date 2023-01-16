@@ -1,74 +1,39 @@
-document.getElementById("new").addEventListener("click", function() {
-    // Make a GET request to the Chuck Norris API using AJAX
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.chucknorris.io/jokes/random");
-    xhr.onload = function() {
-    if (xhr.status === 200) {
-        // Parse the response as JSON
-        var response = JSON.parse(xhr.responseText);
-        // Set the text of the element with the id "joke" to the joke
-        document.getElementById("joke").innerHTML = response.value;
-    }
+function getJokes(cat, target) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.chucknorris.io/jokes/random?category=" + cat);
+    xhr.onload = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                // Parse the response as JSON
+                const response = JSON.parse(xhr.responseText);
+                // Set the text of the element with the id "joke" to the joke
+                document.getElementById(target).innerHTML = response.value;
+            } else {
+                // Handle the error
+                document.getElementById(target).innerHTML = "Error: " + xhr.status + " " + xhr.statusText;
+            }
+        }
+    };
+    xhr.onerror = function () {
+        // Handle the error
+        document.getElementById(target).innerHTML = "Error: Unable to fetch joke";
     };
     xhr.send();
-});
+}
 
-document.getElementById("new1").addEventListener("click", function() {
-    // Make a GET request to the Chuck Norris API using AJAX
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.chucknorris.io/jokes/random?category=dev");
-    xhr.onload = function() {
-    if (xhr.status === 200) {
-        // Parse the response as JSON
-        var response = JSON.parse(xhr.responseText);
-        // Set the text of the element with the id "joke" to the joke
-        document.getElementById("joke1").innerHTML = response.value;
-    }
-    };
-    xhr.send();
-});
 
-document.getElementById("new2").addEventListener("click", function() {
-    // Make a GET request to the Chuck Norris API using AJAX
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.chucknorris.io/jokes/random?category=animal");
-    xhr.onload = function() {
-    if (xhr.status === 200) {
-        // Parse the response as JSON
-        var response = JSON.parse(xhr.responseText);
-        // Set the text of the element with the id "joke" to the joke
-        document.getElementById("joke2").innerHTML = response.value;
-    }
-    };
-    xhr.send();
-});
+document.getElementById("dev").addEventListener("click", function (e) {
+    getJokes(e.target.id, e.target.dataset.target)
+})
 
-document.getElementById("new3").addEventListener("click", function() {
-    // Make a GET request to the Chuck Norris API using AJAX
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.chucknorris.io/jokes/random?category=science");
-    xhr.onload = function() {
-    if (xhr.status === 200) {
-        // Parse the response as JSON
-        var response = JSON.parse(xhr.responseText);
-        // Set the text of the element with the id "joke" to the joke
-        document.getElementById("joke3").innerHTML = response.value;
-    }
-    };
-    xhr.send();
-});
+document.getElementById("animal").addEventListener("click", function (e) {
+    getJokes(e.target.id, e.target.dataset.target)
+})
 
-document.getElementById("new4").addEventListener("click", function() {
-    // Make a GET request to the Chuck Norris API using AJAX
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.chucknorris.io/jokes/random?category=explicit");
-    xhr.onload = function() {
-    if (xhr.status === 200) {
-        // Parse the response as JSON
-        var response = JSON.parse(xhr.responseText);
-        // Set the text of the element with the id "joke" to the joke
-        document.getElementById("joke4").innerHTML = response.value;
-    }
-    };
-    xhr.send();
-});
+document.getElementById("science").addEventListener("click", function (e) {
+    getJokes(e.target.id, e.target.dataset.target)
+})
+
+document.getElementById("explicit").addEventListener("click", function (e) {
+    getJokes(e.target.id, e.target.dataset.target)
+})
