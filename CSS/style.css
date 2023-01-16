@@ -32,8 +32,12 @@ h2{
 }
 
 /* jokes category page */
+.button-container{
+    text-align: center;
+}
 
 #dev, #animal, #science, #explicit{
+    margin-top: 10px;
     text-align: center;
 }
 
