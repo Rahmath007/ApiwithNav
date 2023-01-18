@@ -9,12 +9,6 @@ body{
     flex-direction: column;
 }
 
-h1{
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-}
-
 #data{
     width: 600px;
     border: 1px dashed black;
@@ -22,16 +16,32 @@ h1{
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 10px;
     padding: 20px;
 }
 
+/* about.html page */
+
+section{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+article{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/*
 #aboutpageh1{
     margin-top: 150px;
     text-align: center;
     font-weight: bold;
 }
-
-/* contact us page */
 
 #aboutpagep{
     text-align: center;
@@ -39,6 +49,15 @@ h1{
     margin-left: 150px;
     margin-right: 150px;
 }
+
+h1{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+*/
+
+/* contact us page */
 
 #ContacUsSection{
     text-align: center;
@@ -52,6 +71,10 @@ h1{
 #dev, #animal, #science, #explicit{
     margin-top: 10px;
     text-align: center;
+}
+
+#explicit{
+    margin-bottom: 10px;
 }
 
 #joke,#joke1,#joke2,#joke3,#joke4 {
