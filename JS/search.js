@@ -42,12 +42,6 @@ searchForm.addEventListener("submit", (event) => {
                 jokesList.innerHTML += `<li>${joke.value}</li>`;
             });
 
-            // data.result.forEach((joke) => {
-            //     jokesList.innerHTML += `<li>${joke.value}</li>`;
-            // });
-
-            // Display the search results container
-
             searchResults.style.display = "block";
         })
 

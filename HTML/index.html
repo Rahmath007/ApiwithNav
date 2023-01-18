@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
     <title>Jokes Factory</title>
     <!-- Display title logo -->
-    <link rel="icon" type="image/jpg" href="/img/images.jpeg" />
+    <link rel="icon" type="image/png" href="/img/chucknorris.png" />
 
     <!-- Link to a stylesheet file -->
     <link rel="stylesheet" href="/CSS/nav.css" />
@@ -16,7 +17,8 @@
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FFE1C4">
   </head>
   <body>
     <!-- The webpage's header -->
@@ -38,7 +40,7 @@
     <main>
       <section>
         <!-- The Chuck Norris logo image -->
-        <img id="logo" src="/img/images.jpeg" alt="Chuck norris logo" />
+        <img id="logo" src="/img/chucknorris.png" alt="Chuck norris logo" />
         <!-- A heading -->
         <h1>Click on the Image to get Random Jokes</h1>
         <!-- A container for the search results -->
@@ -89,6 +91,7 @@
       </div>
     </footer>
     <!-- Load a JavaScript file -->
+    <script src="/JS/app.js"></script>
     <script src="/JS/script.js"></script>
   </body>
 </html>

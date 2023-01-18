@@ -24,11 +24,7 @@ searchForm.addEventListener("submit", function (event) {
     var max_jokes = data.result.slice(0, 5);
     max_jokes.forEach(function (joke) {
       jokesList.innerHTML += "<li>".concat(joke.value, "</li>");
-    }); // data.result.forEach((joke) => {
-    //     jokesList.innerHTML += `<li>${joke.value}</li>`;
-    // });
-    // Display the search results container
-
+    });
     searchResults.style.display = "block";
   })["catch"](function (error) {
     return console.error(error);

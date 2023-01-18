@@ -32,25 +32,7 @@ function getJokes(cat, target) {
     };
     xhr.send();
 }
-/*
 
-document.getElementById("dev").addEventListener("click", function (e) {
-    getJokes(e.target.id, e.target.dataset.target)
-})
-
-document.getElementById("animal").addEventListener("click", function (e) {
-    getJokes(e.target.id, e.target.dataset.target)
-})
-
-document.getElementById("science").addEventListener("click", function (e) {
-    getJokes(e.target.id, e.target.dataset.target)
-})
-
-document.getElementById("explicit").addEventListener("click", function (e) {
-    getJokes(e.target.id, e.target.dataset.target)
-})
-
-*/
 
 /**
  * Adds click event listeners to the buttons that fetch jokes from the API and display them on the webpage
